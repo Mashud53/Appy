@@ -12,6 +12,7 @@ import Home from '../Pages/Home/Home';
                 {
                     index:true,
                     path:"/",
+                    loader:()=>fetch('/apps.json').then(res=>res.json())  ,
                     Component: Home
                 }
             ]
