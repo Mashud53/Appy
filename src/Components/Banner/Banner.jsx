@@ -14,7 +14,7 @@ const Banner = () => {
                     <h2 className='w-64 text-center text-3xl font-bold'>
                         We Build <span className='bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent'>Productive</span> Apps
                     </h2>
-                    <p className='text-sm text-gray-500 my-4 max-w-[580px] text-center'>
+                    <p className='text-sm text-gray-500 my-4 max-w-145 text-center'>
                         At Appy, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact
                     </p>
                     <div className='flex items-center gap-3'>

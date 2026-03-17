@@ -4,7 +4,7 @@ import ratingimg from "../../assets/icon-ratings.png"
 
 const Card = ({ data }) => {
     const { id, title, image, downloads, ratingAvg } = data
-    console.log(data)
+    // console.log(data)
     return (
         <div className="card bg-base-100 w-72 shadow-sm p-4">
            

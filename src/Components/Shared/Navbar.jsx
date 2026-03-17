@@ -7,12 +7,12 @@ import { FaG } from 'react-icons/fa6';
 const Navbar = () => {
     const navItems=<>
     <li><NavLink to={'/'}
-    className={({isActive})=> isActive ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent":""}
+    className={({isActive})=> isActive ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline":""}
     >Home</NavLink></li>
-    <li ><NavLink to={'/apps'}
-    className={({isActive})=> isActive ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent":""}>Apps</NavLink></li>
+    <li ><NavLink to={'/allapps'}
+    className={({isActive})=> isActive ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline":""}>Apps</NavLink></li>
     <li><NavLink to={'/install'}
-    className={({isActive})=> isActive ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent":""}>Installation</NavLink></li>
+    className={({isActive})=> isActive ? "bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline":""}>Installation</NavLink></li>
       
     </>
     return (
