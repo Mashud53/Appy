@@ -4,29 +4,34 @@ import RootLayout from '../RootLayout/RootLayout';
 import Home from '../Pages/Home/Home';
 import AllApps from '../Pages/AllApps/AllApps';
 import ErrorPage from '../Pages/ErrorPage/ErrorPage';
+import AppsDetails from '../Pages/AppsDetails/AppsDetails';
 
 
-    export const router = createBrowserRouter([
-        {
-            path:"/",
-            Component: RootLayout,
-            errorElement: <ErrorPage></ErrorPage>,
-            children:[
-                {
-                    index:true,
-                    path:"/",
-                    loader:()=>fetch('/apps.json').then(res=>res.json()),
-                    Component: Home
-                },
-                {
-                    path:'/allapps',
-                    loader:()=>fetch('https://raw.githubusercontent.com/Mashud53/Appy/refs/heads/main/public/apps.json').then(res=>res.json()),
-                    Component: AllApps
-                }
-            ]
+export const router = createBrowserRouter([
+    {
+        path: "/",
+        Component: RootLayout,
+        errorElement: <ErrorPage></ErrorPage>,
+        children: [
+            {
+                index: true,
+                path: "/",
+                loader: () => fetch('/apps.json').then(res => res.json()),
+                Component: Home
+            },
+            {
+                path: '/allapps',
+                Component: AllApps
+            },
+            {
+                path: '/appDetails/:id',
+                loader: () => fetch('https://raw.githubusercontent.com/Mashud53/Appy/refs/heads/main/public/apps.json').then(res => res.json()),
+                Component: AppsDetails
+            }
+        ]
 
 
-        }
-    ])
+    }
+])
 
 

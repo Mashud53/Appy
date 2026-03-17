@@ -1,9 +1,74 @@
 import React from 'react';
+import { useLoaderData, useParams } from 'react-router';
+import downImg from "../../assets/icon-downloads.png";
+import ratingImg from "../../assets/icon-ratings.png";
+import reviewImg from "../../assets/icon-review.png";
+import NumberFormater from "../../Utils/NumberFormater"
+import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const AppsDetails = () => {
+    const productId = useParams().id
+    const appsData = useLoaderData()
+    const filterData = appsData.find(app => parseInt(app.id) === parseInt(productId))
+    const { id, title, companyName, image, downloads, ratingAvg, ratings, reviews, size } = filterData
+    const barData = [...ratings].reverse()
+    console.log(filterData)
     return (
-        <div>
-            Product Detalis
+        <div className='min-h-screen py-10 bg-[#e9e8e8] px-8'>
+            <div className='grid grid-cols-3 gap-4'>
+                <div className='col-span-1'>
+                    <img src={image} alt="" className='w-full' />
+
+                </div>
+                <div className='col-span-2'>
+                    <div>
+                        <h2 className='text-xl font-bold'>{title}</h2>
+                        <p className='text-sm'>Developed by: <span className='bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent'>{companyName}</span></p>
+                    </div>
+                    <div className='border-t border-gray-300 my-4'>
+                        <div className='grid grid-cols-3 gap-6 mt-4'>
+                            <div className='flex flex-col items-start justify-center text-xs font-light'>
+                                <img src={downImg} alt="" className='w-5' />
+                                <p className='py-1'>Downlaods</p>
+                                <h2 className='text-2xl font-bold '>{NumberFormater(downloads)}</h2>
+
+                            </div>
+                            <div className='flex flex-col items-start justify-center text-xs font-light'>
+                                <img src={ratingImg} alt="" className='w-5' />
+                                <p className='py-1'>Average Rating</p>
+                                <h2 className='text-2xl font-bold'>{ratingAvg}</h2>
+
+                            </div>
+                            <div className='flex flex-col items-start justify-center text-xs font-light'>
+                                <img src={reviewImg} alt="" className='w-5' />
+                                <p className='py-1'>Total Reviews</p>
+                                <h2 className='text-2xl font-bold'>{NumberFormater(reviews)}</h2>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <button className='btn bg-green-400 text-white mt-4'> Install Now ({size} MB)</button>
+                    </div>
+                </div>
+
+            </div>
+            <div className='border-t border-gray-300 my-4 pt-8'>
+                <h2 className='text-lg font-bold mb-4'>Ratings</h2>
+
+                <ResponsiveContainer width="100%" height={300}>
+                    <BarChart data={barData} layout="vertical">
+                        <XAxis type="number" />
+                        <YAxis dataKey="name" type="category" />
+
+                        <Bar dataKey="count" fill='#FF8811' />
+                    </BarChart>
+                </ResponsiveContainer>
+
+
+
+            </div>
         </div>
     );
 };
