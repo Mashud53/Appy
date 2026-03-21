@@ -1,373 +1,362 @@
 [
-{
-  "id": 1,
-  "title": "ChatMaster",
-  "companyName": "ConnectSoft",
-  "image": "https://i.ibb.co.com/pr0J10Lj/demo-app-5.webp",
-  "description": "A fast and secure messaging app to chat with friends and family.",
-  "size": 45,
-  "reviews": 1200,
-  "ratingAvg": 4.6,
-  "downloads": 500000,
-  "ratings": [
-    { "name": "1 star", "count": 20 },
-    { "name": "2 star", "count": 40 },
-    { "name": "3 star", "count": 100 },
-    { "name": "4 star", "count": 350 },
-    { "name": "5 star", "count": 690 }
-  ]
-},
-{
-  "id": 2,
-  "title": "PhotoMagic",
-  "companyName": "PixelLab",
-  "image": "https://i.ibb.co.com/cKyzb3kg/demo-app-1.webp",
-  "description": "Edit photos with powerful filters and AI tools.",
-  "size": 60,
-  "reviews": 980,
-  "ratingAvg": 4.5,
-  "downloads": 420000,
-  "ratings": [
-    { "name": "1 star", "count": 25 },
-    { "name": "2 star", "count": 35 },
-    { "name": "3 star", "count": 90 },
-    { "name": "4 star", "count": 300 },
-    { "name": "5 star", "count": 530 }
-  ]
-},
-{
-  "id": 3,
-  "title": "FitTrack",
-  "companyName": "HealthPro",
-  "image": "https://i.ibb.co.com/wNXZtXWJ/demo-app-2.webp",
-  "description": "Track workouts, calories, and daily fitness goals.",
-  "size": 50,
-  "reviews": 860,
-  "ratingAvg": 4.4,
-  "downloads": 350000,
-  "ratings": [
-    { "name": "1 star", "count": 30 },
-    { "name": "2 star", "count": 50 },
-    { "name": "3 star", "count": 110 },
-    { "name": "4 star", "count": 270 },
-    { "name": "5 star", "count": 400 }
-  ]
-},
-{
-  "id": 4,
-  "title": "MusicWave",
-  "companyName": "SoundLab",
-  "image": "https://i.ibb.co.com/4Z7BBWrW/demo-app-3.webp",
-  "description": "Stream millions of songs and create playlists.",
-  "size": 70,
-  "reviews": 1400,
-  "ratingAvg": 4.7,
-  "downloads": 800000,
-  "ratings": [
-    { "name": "1 star", "count": 15 },
-    { "name": "2 star", "count": 25 },
-    { "name": "3 star", "count": 120 },
-    { "name": "4 star", "count": 400 },
-    { "name": "5 star", "count": 840 }
-  ]
-},
-{
-  "id": 5,
-  "title": "QuickNotes",
-  "companyName": "NoteTech",
-  "image": "https://i.ibb.co.com/4nTkYSn8/demo-app-4.webp",
-  "description": "Simple and fast note-taking app with cloud sync.",
-  "size": 25,
-  "reviews": 650,
-  "ratingAvg": 4.3,
-  "downloads": 280000,
-  "ratings": [
-    { "name": "1 star", "count": 20 },
-    { "name": "2 star", "count": 40 },
-    { "name": "3 star", "count": 90 },
-    { "name": "4 star", "count": 200 },
-    { "name": "5 star", "count": 300 }
-  ]
-},
-{
-  "id": 6,
-  "title": "WeatherNow",
-  "companyName": "SkyTech",
-  "image": "https://i.ibb.co.com/pr0J10Lj/demo-app-5.webp",
-  "description": "Real-time weather updates and forecasts.",
-  "size": 30,
-  "reviews": 720,
-  "ratingAvg": 4.2,
-  "downloads": 310000,
-  "ratings": [
-    { "name": "1 star", "count": 25 },
-    { "name": "2 star", "count": 60 },
-    { "name": "3 star", "count": 110 },
-    { "name": "4 star", "count": 210 },
-    { "name": "5 star", "count": 315 }
-  ]
-},
-{
-  "id": 7,
-  "title": "FoodExpress",
-  "companyName": "DeliveryHub",
-  "image": "https://i.ibb.co.com/sdqr2vQ5/demo-app-6.webp",
-  "description": "Order food online from nearby restaurants.",
-  "size": 55,
-  "reviews": 1100,
-  "ratingAvg": 4.5,
-  "downloads": 600000,
-  "ratings": [
-    { "name": "1 star", "count": 35 },
-    { "name": "2 star", "count": 55 },
-    { "name": "3 star", "count": 150 },
-    { "name": "4 star", "count": 350 },
-    { "name": "5 star", "count": 510 }
-  ]
-},
-{
-  "id": 8,
-  "title": "TravelMate",
-  "companyName": "GlobeSoft",
-  "image": "https://i.ibb.co.com/b5666052/travel-Mate.png",
-  "description": "Plan trips, book hotels, and explore destinations.",
-  "size": 65,
-  "reviews": 900,
-  "ratingAvg": 4.6,
-  "downloads": 450000,
-  "ratings": [
-    { "name": "1 star", "count": 20 },
-    { "name": "2 star", "count": 35 },
-    { "name": "3 star", "count": 120 },
-    { "name": "4 star", "count": 310 },
-    { "name": "5 star", "count": 415 }
-  ]
-},
-
-{
-  "id": 9,
-  "title": "TaskPro",
-  "companyName": "WorkFlow Inc",
-  "image": "https://i.ibb.co.com/C5skBW0C/task-Pro.png",
-  "description": "Manage tasks and boost productivity.",
-  "size": 40,
-  "reviews": 500,
-  "ratingAvg": 4.3,
-  "downloads": 200000,
-  "ratings": [
-    { "name": "1 star", "count": 15 },
-    { "name": "2 star", "count": 25 },
-    { "name": "3 star", "count": 80 },
-    { "name": "4 star", "count": 160 },
-    { "name": "5 star", "count": 220 }
-  ]
-},
-{
-  "id": 10,
-  "title": "LearnFast",
-  "companyName": "EduTech",
-  "image": "https://i.ibb.co/learnfast.png",
-  "description": "Learn new skills with interactive courses.",
-  "size": 75,
-  "reviews": 750,
-  "ratingAvg": 4.5,
-  "downloads": 320000,
-  "ratings": [
-    { "name": "1 star", "count": 20 },
-    { "name": "2 star", "count": 40 },
-    { "name": "3 star", "count": 100 },
-    { "name": "4 star", "count": 250 },
-    { "name": "5 star", "count": 340 }
-  ]
-},
-
-{
-  "id": 11,
-  "title": "SecureVault",
-  "companyName": "SafeTech",
-  "image": "https://i.ibb.co.com/gLRtRrkz/secure-Vault.png",
-  "description": "Store passwords and private files securely.",
-  "size": 35,
-  "reviews": 400,
-  "ratingAvg": 4.4,
-  "downloads": 150000,
-  "ratings": [
-    { "name": "1 star", "count": 10 },
-    { "name": "2 star", "count": 20 },
-    { "name": "3 star", "count": 60 },
-    { "name": "4 star", "count": 140 },
-    { "name": "5 star", "count": 170 }
-  ]
-},
-
-{
-  "id": 12,
-  "title": "GameZone",
-  "companyName": "FunPlay",
-  "image": "https://i.ibb.co.com/60CWsdm8/game-Zone.png",
-  "description": "Play multiple mini-games in one app.",
-  "size": 90,
-  "reviews": 1300,
-  "ratingAvg": 4.6,
-  "downloads": 900000,
-  "ratings": [
-    { "name": "1 star", "count": 30 },
-    { "name": "2 star", "count": 50 },
-    { "name": "3 star", "count": 120 },
-    { "name": "4 star", "count": 380 },
-    { "name": "5 star", "count": 720 }
-  ]
-},
-
-{
-  "id": 13,
-  "title": "VideoCut",
-  "companyName": "MediaLab",
-  "image": "https://i.ibb.co.com/T6hvLpC/video-Cut.png",
-  "description": "Edit videos easily with professional tools.",
-  "size": 110,
-  "reviews": 890,
-  "ratingAvg": 4.5,
-  "downloads": 500000,
-  "ratings": [
-    { "name": "1 star", "count": 22 },
-    { "name": "2 star", "count": 33 },
-    { "name": "3 star", "count": 110 },
-    { "name": "4 star", "count": 300 },
-    { "name": "5 star", "count": 425 }
-  ]
-},
-
-{
-  "id": 14,
-  "title": "NewsFlash",
-  "companyName": "DailyMedia",
-  "image": "https://i.ibb.co.com/hJgk7zvZ/news-Flash.png",
-  "description": "Latest news updates from around the world.",
-  "size": 28,
-  "reviews": 540,
-  "ratingAvg": 4.2,
-  "downloads": 260000,
-  "ratings": [
-    { "name": "1 star", "count": 20 },
-    { "name": "2 star", "count": 50 },
-    { "name": "3 star", "count": 100 },
-    { "name": "4 star", "count": 180 },
-    { "name": "5 star", "count": 190 }
-  ]
-},
-
-{
-  "id": 15,
-  "title": "LanguageGo",
-  "companyName": "LinguaTech",
-  "image": "https://i.ibb.co/languagego.png",
-  "description": "Learn multiple languages with fun exercises.",
-  "size": 68,
-  "reviews": 620,
-  "ratingAvg": 4.4,
-  "downloads": 310000,
-  "ratings": [
-    { "name": "1 star", "count": 18 },
-    { "name": "2 star", "count": 32 },
-    { "name": "3 star", "count": 90 },
-    { "name": "4 star", "count": 220 },
-    { "name": "5 star", "count": 260 }
-  ]
-},
-
-{
-  "id": 16,
-  "title": "SmartScanner",
-  "companyName": "DocTech",
-  "image": "https://i.ibb.co/smartscanner.png",
-  "description": "Scan documents quickly and save as PDF.",
-  "size": 33,
-  "reviews": 450,
-  "ratingAvg": 4.3,
-  "downloads": 190000,
-  "ratings": [
-    { "name": "1 star", "count": 15 },
-    { "name": "2 star", "count": 25 },
-    { "name": "3 star", "count": 70 },
-    { "name": "4 star", "count": 160 },
-    { "name": "5 star", "count": 180 }
-  ]
-},
-
-{
-  "id": 17,
-  "title": "BudgetBuddy",
-  "companyName": "FinanceSoft",
-  "image": "https://i.ibb.co/budgetbuddy.png",
-  "description": "Track expenses and manage personal budgets.",
-  "size": 42,
-  "reviews": 390,
-  "ratingAvg": 4.2,
-  "downloads": 170000,
-  "ratings": [
-    { "name": "1 star", "count": 20 },
-    { "name": "2 star", "count": 30 },
-    { "name": "3 star", "count": 70 },
-    { "name": "4 star", "count": 130 },
-    { "name": "5 star", "count": 140 }
-  ]
-},
-
-{
-  "id": 18,
-  "title": "BookShelf",
-  "companyName": "ReaderHub",
-  "image": "https://i.ibb.co/bookshelf.png",
-  "description": "Read thousands of ebooks anytime.",
-  "size": 58,
-  "reviews": 510,
-  "ratingAvg": 4.4,
-  "downloads": 230000,
-  "ratings": [
-    { "name": "1 star", "count": 18 },
-    { "name": "2 star", "count": 28 },
-    { "name": "3 star", "count": 90 },
-    { "name": "4 star", "count": 170 },
-    { "name": "5 star", "count": 204 }
-  ]
-},
-
-{
-  "id": 19,
-  "title": "MapNavigator",
-  "companyName": "GeoSoft",
-  "image": "https://i.ibb.co/mapnavigator.png",
-  "description": "Navigate anywhere with real-time maps.",
-  "size": 85,
-  "reviews": 1020,
-  "ratingAvg": 4.6,
-  "downloads": 700000,
-  "ratings": [
-    { "name": "1 star", "count": 25 },
-    { "name": "2 star", "count": 40 },
-    { "name": "3 star", "count": 120 },
-    { "name": "4 star", "count": 350 },
-    { "name": "5 star", "count": 485 }
-  ]
-},
-
-{
-  "id": 20,
-  "title": "CloudDrive",
-  "companyName": "DataSync",
-  "image": "https://i.ibb.co/clouddrive.png",
-  "description": "Store and access files securely in the cloud.",
-  "size": 72,
-  "reviews": 780,
-  "ratingAvg": 4.5,
-  "downloads": 410000,
-  "ratings": [
-    { "name": "1 star", "count": 20 },
-    { "name": "2 star", "count": 35 },
-    { "name": "3 star", "count": 100 },
-    { "name": "4 star", "count": 280 },
-    { "name": "5 star", "count": 345 }
-  ]
-}
+  {
+    "id": 1,
+    "title": "ChatMaster",
+    "companyName": "ConnectSoft",
+    "image": "https://i.ibb.co.com/pr0J10Lj/demo-app-5.webp",
+    "description": "ChatMaster is a fast, secure, and user-friendly messaging app designed to keep you connected with friends, family, and colleagues. Enjoy real-time chats, voice and video calls, and easy media sharing. With strong privacy features and smooth performance, ChatMaster makes communication simple, reliable, and enjoyable anytime.",
+    "size": 45,
+    "reviews": 1200,
+    "ratingAvg": 4.6,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 690 }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "PhotoMagic",
+    "companyName": "PixelLab",
+    "image": "https://i.ibb.co.com/cKyzb3kg/demo-app-1.webp",
+    "description": "PhotoMagic is a powerful photo editing app that helps you transform ordinary images into stunning visuals. Use advanced filters, AI tools, and creative effects to enhance your photos effortlessly. Whether you're a beginner or a pro, PhotoMagic makes editing fun, quick, and professional.",
+    "size": 60,
+    "reviews": 980,
+    "ratingAvg": 4.5,
+    "downloads": 420000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 90 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 530 }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "FitTrack",
+    "companyName": "HealthPro",
+    "image": "https://i.ibb.co.com/wNXZtXWJ/demo-app-2.webp",
+    "description": "FitTrack is your personal fitness companion that helps you track workouts, monitor calories, and achieve daily health goals. Get detailed insights, progress tracking, and motivation to stay active. Whether you want to lose weight or build strength, FitTrack supports your fitness journey every step.",
+    "size": 50,
+    "reviews": 860,
+    "ratingAvg": 4.4,
+    "downloads": 350000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 110 },
+      { "name": "4 star", "count": 270 },
+      { "name": "5 star", "count": 400 }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "MusicWave",
+    "companyName": "SoundLab",
+    "image": "https://i.ibb.co.com/4Z7BBWrW/demo-app-3.webp",
+    "description": "MusicWave lets you stream millions of songs and create personalized playlists based on your taste. Discover new artists, enjoy high-quality audio, and listen anytime, anywhere. With smart recommendations and smooth performance, MusicWave brings your favorite music closer than ever.",
+    "size": 70,
+    "reviews": 1400,
+    "ratingAvg": 4.7,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 840 }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "QuickNotes",
+    "companyName": "NoteTech",
+    "image": "https://i.ibb.co.com/4nTkYSn8/demo-app-4.webp",
+    "description": "QuickNotes is a simple and efficient note-taking app that helps you capture ideas instantly. Write, organize, and sync notes across devices with ease. Its clean design and fast performance make it perfect for managing tasks, reminders, and important information daily.",
+    "size": 25,
+    "reviews": 650,
+    "ratingAvg": 4.3,
+    "downloads": 280000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 90 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 300 }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "WeatherNow",
+    "companyName": "SkyTech",
+    "image": "https://i.ibb.co.com/pr0J10Lj/demo-app-5.webp",
+    "description": "WeatherNow provides real-time weather updates and accurate forecasts for your location. Stay informed with temperature, humidity, and weather alerts. Its easy-to-use interface ensures you can quickly check conditions and plan your day with confidence.",
+    "size": 30,
+    "reviews": 720,
+    "ratingAvg": 4.2,
+    "downloads": 310000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 110 },
+      { "name": "4 star", "count": 210 },
+      { "name": "5 star", "count": 315 }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "FoodExpress",
+    "companyName": "DeliveryHub",
+    "image": "https://i.ibb.co.com/sdqr2vQ5/demo-app-6.webp",
+    "description": "FoodExpress makes ordering food quick and convenient. Browse nearby restaurants, explore menus, and get your favorite meals delivered fast. With real-time tracking and secure payments, FoodExpress ensures a smooth and satisfying food delivery experience.",
+    "size": 55,
+    "reviews": 1100,
+    "ratingAvg": 4.5,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 55 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 510 }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "TravelMate",
+    "companyName": "GlobeSoft",
+    "image": "https://i.ibb.co.com/b5666052/travel-Mate.png",
+    "description": "TravelMate helps you plan your trips with ease by offering hotel bookings, destination guides, and travel tips. Explore new places, manage itineraries, and discover exciting experiences. It’s the perfect companion for both short trips and long adventures.",
+    "size": 65,
+    "reviews": 900,
+    "ratingAvg": 4.6,
+    "downloads": 450000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 310 },
+      { "name": "5 star", "count": 415 }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "TaskPro",
+    "companyName": "WorkFlow Inc",
+    "image": "https://i.ibb.co.com/C5skBW0C/task-Pro.png",
+    "description": "TaskPro is a productivity app designed to help you manage tasks and stay organized. Create to-do lists, set reminders, and track progress efficiently. With a simple interface and powerful tools, TaskPro boosts your productivity and helps you get things done faster.",
+    "size": 40,
+    "reviews": 500,
+    "ratingAvg": 4.3,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 160 },
+      { "name": "5 star", "count": 220 }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "LearnFast",
+    "companyName": "EduTech",
+    "image": "https://i.ibb.co/learnfast.png",
+    "description": "LearnFast is an interactive learning app that helps you gain new skills quickly and effectively. Access a wide range of courses, track your progress, and learn at your own pace. It’s perfect for students and professionals looking to improve knowledge.",
+    "size": 75,
+    "reviews": 750,
+    "ratingAvg": 4.5,
+    "downloads": 320000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 340 }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "SecureVault",
+    "companyName": "SafeTech",
+    "image": "https://i.ibb.co.com/gLRtRrkz/secure-Vault.png",
+    "description": "SecureVault keeps your passwords, files, and sensitive data safe with advanced security features. Store and manage your information securely with encryption and easy access. It ensures your private data remains protected at all times.",
+    "size": 35,
+    "reviews": 400,
+    "ratingAvg": 4.4,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 60 },
+      { "name": "4 star", "count": 140 },
+      { "name": "5 star", "count": 170 }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "GameZone",
+    "companyName": "FunPlay",
+    "image": "https://i.ibb.co.com/60CWsdm8/game-Zone.png",
+    "description": "GameZone offers a collection of exciting mini-games in one app. Enjoy different genres, challenge yourself, and have fun anytime. With smooth gameplay and engaging features, GameZone is perfect for entertainment and relaxation.",
+    "size": 90,
+    "reviews": 1300,
+    "ratingAvg": 4.6,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 380 },
+      { "name": "5 star", "count": 720 }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "VideoCut",
+    "companyName": "MediaLab",
+    "image": "https://i.ibb.co.com/T6hvLpC/video-Cut.png",
+    "description": "VideoCut is a powerful video editing app that allows you to create professional-quality videos easily. Trim clips, add effects, and enhance visuals with simple tools. It’s ideal for content creators and beginners alike.",
+    "size": 110,
+    "reviews": 890,
+    "ratingAvg": 4.5,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 22 },
+      { "name": "2 star", "count": 33 },
+      { "name": "3 star", "count": 110 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 425 }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "NewsFlash",
+    "companyName": "DailyMedia",
+    "image": "https://i.ibb.co.com/hJgk7zvZ/news-Flash.png",
+    "description": "NewsFlash keeps you updated with the latest news from around the world. Get real-time updates, trending topics, and personalized news feeds. Stay informed anytime with a clean and easy-to-read interface.",
+    "size": 28,
+    "reviews": 540,
+    "ratingAvg": 4.2,
+    "downloads": 260000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 180 },
+      { "name": "5 star", "count": 190 }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "LanguageGo",
+    "companyName": "LinguaTech",
+    "image": "https://i.ibb.co/languagego.png",
+    "description": "LanguageGo helps you learn new languages through fun and interactive lessons. Practice speaking, reading, and writing with engaging exercises. It’s a great tool for beginners and advanced learners alike.",
+    "size": 68,
+    "reviews": 620,
+    "ratingAvg": 4.4,
+    "downloads": 310000,
+    "ratings": [
+      { "name": "1 star", "count": 18 },
+      { "name": "2 star", "count": 32 },
+      { "name": "3 star", "count": 90 },
+      { "name": "4 star", "count": 220 },
+      { "name": "5 star", "count": 260 }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "SmartScanner",
+    "companyName": "DocTech",
+    "image": "https://i.ibb.co/smartscanner.png",
+    "description": "SmartScanner lets you quickly scan documents and save them as high-quality PDFs. Easily digitize papers, receipts, and notes. With fast processing and clear results, it’s perfect for both personal and professional use.",
+    "size": 33,
+    "reviews": 450,
+    "ratingAvg": 4.3,
+    "downloads": 190000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 70 },
+      { "name": "4 star", "count": 160 },
+      { "name": "5 star", "count": 180 }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "BudgetBuddy",
+    "companyName": "FinanceSoft",
+    "image": "https://i.ibb.co/budgetbuddy.png",
+    "description": "BudgetBuddy helps you track expenses and manage your finances effectively. Monitor spending, set budgets, and achieve financial goals. Its simple interface makes money management easy and stress-free.",
+    "size": 42,
+    "reviews": 390,
+    "ratingAvg": 4.2,
+    "downloads": 170000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 70 },
+      { "name": "4 star", "count": 130 },
+      { "name": "5 star", "count": 140 }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "BookShelf",
+    "companyName": "ReaderHub",
+    "image": "https://i.ibb.co/bookshelf.png",
+    "description": "BookShelf gives you access to thousands of ebooks anytime, anywhere. Organize your library, track reading progress, and enjoy a smooth reading experience. It’s perfect for book lovers who want convenience and variety.",
+    "size": 58,
+    "reviews": 510,
+    "ratingAvg": 4.4,
+    "downloads": 230000,
+    "ratings": [
+      { "name": "1 star", "count": 18 },
+      { "name": "2 star", "count": 28 },
+      { "name": "3 star", "count": 90 },
+      { "name": "4 star", "count": 170 },
+      { "name": "5 star", "count": 204 }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "MapNavigator",
+    "companyName": "GeoSoft",
+    "image": "https://i.ibb.co/mapnavigator.png",
+    "description": "MapNavigator provides real-time navigation and accurate maps to help you reach your destination easily. Get directions, traffic updates, and route suggestions. It makes traveling easier and more efficient.",
+    "size": 85,
+    "reviews": 1020,
+    "ratingAvg": 4.6,
+    "downloads": 700000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 485 }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "CloudDrive",
+    "companyName": "DataSync",
+    "image": "https://i.ibb.co/clouddrive.png",
+    "description": "CloudDrive allows you to store, manage, and access your files securely in the cloud. Sync data across devices and share files easily. With reliable storage and strong security, CloudDrive keeps your data safe and accessible anytime.",
+    "size": 72,
+    "reviews": 780,
+    "ratingAvg": 4.5,
+    "downloads": 410000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 280 },
+      { "name": "5 star", "count": 345 }
+    ]
+  }
 ]
