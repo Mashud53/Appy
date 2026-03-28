@@ -1,22 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import downImg from "../../assets/icon-downloads.png";
 import ratingImg from "../../assets/icon-ratings.png";
 import reviewImg from "../../assets/icon-review.png";
 import NumberFormater from "../../Utils/NumberFormater"
-import { Bar, BarChart, ResponsiveContainer,  XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
+import Swal from 'sweetalert2';
 
 const AppsDetails = () => {
     const productId = useParams().id
     const appsData = useLoaderData()
+    const [installedApp, setInstalledApp] = useState(
+        JSON.parse(localStorage.getItem("appStore"))
+    )
     const filterData = appsData.find(app => parseInt(app.id) === parseInt(productId))
-    const { id, title, companyName, image, downloads, ratingAvg, ratings, reviews, size, description} = filterData
+    const { id, title, companyName, image, downloads, ratingAvg, ratings, reviews, size, description } = filterData
     const barData = [...ratings].reverse()
+    //  const InstalledApp = JSON.parse(localStorage.getItem("appStore"))
+     const isInstalled = installedApp.includes(id)
+     
 
-    const handleInstall = ()=>{
-        console.log(id)
+    const handleInstall = () => {
+       
+        
+        if (!installedApp.includes(id)) {
+            const updatedApps = [...installedApp, id]
+            localStorage.setItem("appStore", JSON.stringify(updatedApps))
+            setInstalledApp(updatedApps)
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: `${title} installed successfull`,
+                showConfirmButton: false,
+                timer: 1500
+            });
+        } 
     }
-    console.log(filterData)
+    
     return (
         <div className='min-h-screen py-10 bg-[#e9e8e8] px-8'>
             <div className='grid grid-cols-3 gap-4'>
@@ -53,7 +73,9 @@ const AppsDetails = () => {
                         </div>
                     </div>
                     <div>
-                        <button onClick={handleInstall} className='btn bg-green-400 text-white mt-4'> Install Now ({size} MB)</button>
+                        {
+                            isInstalled ? <button className='btn bg-green-400 text-white mt-4'> Installed</button> : <button onClick={handleInstall} className='btn bg-green-400 text-white mt-4'> Install Now ({size} MB)</button>
+                        }
                     </div>
                 </div>
 

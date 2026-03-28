@@ -7,7 +7,7 @@ import Title from '../../Components/Title/Title';
 
 const AllApps = () => {
   
-    const appPromise = fetch('/apps.json').then(res=>res.json())
+    const appPromise = fetch('https://raw.githubusercontent.com/Mashud53/Appy/refs/heads/main/public/apps.json').then(res=>res.json())
 
     return (
         <div className='py-20 px-4 bg-[#e9e8e8] min-h-screen'>

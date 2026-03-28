@@ -5,14 +5,14 @@ import { Link } from 'react-router';
 
 const Card = ({ data }) => {
     const { id, title, image, downloads, ratingAvg } = data
-    // console.log(data)
+    
     return (
         <>
             <Link to={`/appDetails/${id}`}>
                 <div className="card bg-base-100 w-72 shadow-sm p-4">
 
                     <div>
-                        <img src={image} alt="" className='rounded-lg hover:translate-0.5 duration-75' />
+                        <img src={image} alt="" className='rounded-lg hover:translate-0.5 duration-75 h-52 object-cover w-full' />
                     </div>
                     <div>
                         <h2 className='my-4'>{title}</h2>

@@ -2,19 +2,23 @@ import React, { use, useEffect, useState } from 'react';
 import { Link } from 'react-router';
 import { FaSearch } from 'react-icons/fa';
 import Card from '../Card/Card';
+import Loading from '../Loading/Loading';
 
 const Apps = ({appPromise }) => {
     const [displayApps, setDisplayApps] = useState([])
         const [search, setSearch] = useState("")
+        const [isLoading, setLoading] = useState(false)
         
     const appsData = use(appPromise )
-    console.log(appsData )
+    
 
 useEffect(() => {
+    setLoading(true)
        
-        if (search.length>0) {
+       const timer = setTimeout(()=>{
+         if (search.length>0) {
             const filterdata = appsData.filter(app => app.title.toLowerCase().includes(search.toLowerCase()))
-            console.log(filterdata)
+            
            
             setDisplayApps(filterdata)
             
@@ -23,6 +27,10 @@ useEffect(() => {
         else {
             setDisplayApps(appsData)
         }
+        setLoading(false)
+
+       }, 500)
+       return ()=> clearTimeout(timer)
         
     }, [appsData, search])
 
@@ -32,7 +40,7 @@ useEffect(() => {
         const searchItem = e.target.name.value
        setSearch(searchItem)
       
-        console.log(searchItem)
+        
 
     }
     return (
@@ -52,7 +60,9 @@ useEffect(() => {
                 </form>
             </div>
             <div >
-                               
+                {isLoading ? <Loading/> : 
+
+                <>
                 {
 
                    displayApps.length > 0 ? <><div className='grid cols-1 md;grid-cols-2 lg:grid-cols-4 gap-4 mx-auto justify-center'>{displayApps?.map(data => <Card data={data} key={data.id}></Card>)} </div>
@@ -65,6 +75,10 @@ useEffect(() => {
                    </>
                    
                 }
+                </>
+                 }
+                               
+                
             </div>
             
         </div>

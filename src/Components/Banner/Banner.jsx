@@ -18,8 +18,8 @@ const Banner = () => {
                         At Appy, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact
                     </p>
                     <div className='flex items-center gap-3'>
-                        <Link className='border border-gray-400 px-3 py-2 rounded-md text-sm font-semibold flex justify-center items-center gap-1'> <img src={playStore} alt="playstore" className='w-6' /> Google Play</Link>
-                        <Link className='border border-gray-400 px-3 py-2 rounded-md text-sm font-semibold flex justify-center items-center gap-1'> <img src={appStore} alt="app store" className='w-6' /> App Store</Link>
+                        <Link to={"https://play.google.com/store/games?hl=en"} className='border border-gray-400 px-3 py-2 rounded-md text-sm font-semibold flex justify-center items-center gap-1'> <img src={playStore} alt="playstore" className='w-6' /> Google Play</Link>
+                        <Link to={"https://www.apple.com/app-store/"} className='border border-gray-400 px-3 py-2 rounded-md text-sm font-semibold flex justify-center items-center gap-1'> <img src={appStore} alt="app store" className='w-6' /> App Store</Link>
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@ const Banner = () => {
                         <h2 className='text-2xl font-bold py-3'>132+</h2>
                         <p>31 More Will Launch</p>
                     </div>
-                    
+
                 </div>
             </div>
 
