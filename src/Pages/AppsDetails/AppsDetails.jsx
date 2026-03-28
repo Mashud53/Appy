@@ -4,14 +4,18 @@ import downImg from "../../assets/icon-downloads.png";
 import ratingImg from "../../assets/icon-ratings.png";
 import reviewImg from "../../assets/icon-review.png";
 import NumberFormater from "../../Utils/NumberFormater"
-import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, ResponsiveContainer,  XAxis, YAxis } from 'recharts';
 
 const AppsDetails = () => {
     const productId = useParams().id
     const appsData = useLoaderData()
     const filterData = appsData.find(app => parseInt(app.id) === parseInt(productId))
-    const { id, title, companyName, image, downloads, ratingAvg, ratings, reviews, size } = filterData
+    const { id, title, companyName, image, downloads, ratingAvg, ratings, reviews, size, description} = filterData
     const barData = [...ratings].reverse()
+
+    const handleInstall = ()=>{
+        console.log(id)
+    }
     console.log(filterData)
     return (
         <div className='min-h-screen py-10 bg-[#e9e8e8] px-8'>
@@ -49,12 +53,12 @@ const AppsDetails = () => {
                         </div>
                     </div>
                     <div>
-                        <button className='btn bg-green-400 text-white mt-4'> Install Now ({size} MB)</button>
+                        <button onClick={handleInstall} className='btn bg-green-400 text-white mt-4'> Install Now ({size} MB)</button>
                     </div>
                 </div>
 
             </div>
-            <div className='border-t border-gray-300 my-4 pt-8'>
+            <div className='border-t border-b border-gray-300 my-4 py-8 '>
                 <h2 className='text-lg font-bold mb-4'>Ratings</h2>
 
                 <ResponsiveContainer width="100%" height={300}>
@@ -68,6 +72,12 @@ const AppsDetails = () => {
 
 
 
+            </div>
+            <div>
+                <h2 className='text-lg font-bold mb-4'>Description</h2>
+                <p>
+                    {description}
+                </p>
             </div>
         </div>
     );
