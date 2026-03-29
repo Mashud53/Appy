@@ -5,8 +5,7 @@ import Title from '../Title/Title';
 
 const TrandingApp = ({ appsData }) => {
 
-    console.log(appsData)
-
+    
     return (
         <div className='py-12 px-8 bg-[#e9e8e8] '>
             <Title title={"Trending Apps"} desc={"Explore All Trending Apps on the Market developed by us"} />

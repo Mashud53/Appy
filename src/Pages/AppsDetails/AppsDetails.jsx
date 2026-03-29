@@ -8,23 +8,27 @@ import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 import Swal from 'sweetalert2';
 
 const AppsDetails = () => {
-    const productId = useParams().id
+    const {id} = useParams()
     const appsData = useLoaderData()
     const [installedApp, setInstalledApp] = useState(
-        JSON.parse(localStorage.getItem("appStore"))
+        JSON.parse(localStorage.getItem("appStore")) ||[]
     )
-    const filterData = appsData.find(app => parseInt(app.id) === parseInt(productId))
-    const { id, title, companyName, image, downloads, ratingAvg, ratings, reviews, size, description } = filterData
+    const numericId = parseInt(id)
+
+    const filterData = appsData.find(app => parseInt(app.id) === numericId)
+
+    const { title, companyName, image, downloads, ratingAvg, ratings, reviews, size, description } = filterData
     const barData = [...ratings].reverse()
-    //  const InstalledApp = JSON.parse(localStorage.getItem("appStore"))
-     const isInstalled = installedApp.includes(id)
-     
+    
+    const isInstalled = installedApp.includes(numericId)
+
 
     const handleInstall = () => {
-       
-        
-        if (!installedApp.includes(id)) {
-            const updatedApps = [...installedApp, id]
+        let updatedApps = [...installedApp]
+
+        if (!updatedApps.includes(numericId)) {
+            updatedApps.push(numericId)
+
             localStorage.setItem("appStore", JSON.stringify(updatedApps))
             setInstalledApp(updatedApps)
             Swal.fire({
@@ -34,9 +38,9 @@ const AppsDetails = () => {
                 showConfirmButton: false,
                 timer: 1500
             });
-        } 
+        }
     }
-    
+
     return (
         <div className='min-h-screen py-10 bg-[#e9e8e8] px-8'>
             <div className='grid grid-cols-3 gap-4'>

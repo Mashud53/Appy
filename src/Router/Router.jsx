@@ -26,11 +26,11 @@ export const router = createBrowserRouter([
                 Component: AllApps
             },
             {
-                path: '/appDetails/:id',
-                errorElement:<ErrorApps></ErrorApps>,
+                path: '/appDetails/:id',                
                 // loader: () => fetch('/apps.json').then(res => res.json()),
                 loader: () => fetch('https://raw.githubusercontent.com/Mashud53/Appy/refs/heads/main/public/apps.json').then(res => res.json()),
-                Component: AppsDetails
+                Component: AppsDetails,
+                errorElement:<ErrorApps></ErrorApps>
             },
             {
                 path: '/installedApp',
